@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,12 +7,48 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    background-color: rgba(155, 89, 182 , 0.7);
+    font-family: "Open Sans", sans-serif;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
   
+.phone {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 15px;
+    height: 600px;
+    width: 350px;
+}
+
+.phone .content {
+    object-fit: cover;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+/* .phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.5s ease;
+} */
+
+.phone .content .show {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+
+/* .phone .content img {
+    height: 100%;
+    width: 100%;
+} */
