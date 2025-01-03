@@ -16,24 +16,34 @@ body {
 }
   
 .phone {
+    background-color: aliceblue;
     position: relative;
     overflow: hidden;
-    border: 3px solid #eee;
+    border: 3px solid #ccecfc;
     border-radius: 15px;
     height: 600px;
     width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.phone .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.5s ease;
 }
 
 /* .phone .content {
-    opacity: 0;
-    object-fit: cover;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    transition: opacity 0.5s ease;
-} */
-
-.phone .content {
     opacity: 0;
     object-fit: cover;
     position: absolute;
@@ -43,10 +53,19 @@ body {
     height: calc(100% - 60px);
     width: 100%;
     transition: opacity 0.5s ease;
-}
+} */
 
 .phone .content.show {
     opacity: 1;
+}
+
+.phone .content i {
+    font-size: 70px;
+    color: #5cb1f5;
+}
+
+.phone .content p {
+    padding: 15px;
 }
 
 nav {
@@ -58,7 +77,7 @@ nav {
 }
 
 nav ul {
-    background-color: #eee;
+    background-color: #ccecfc;
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -84,5 +103,5 @@ nav ul li:hover {
 }
 
 nav ul li.active {
-    color: #078cf8;
+    color: #0686ef;
 }
