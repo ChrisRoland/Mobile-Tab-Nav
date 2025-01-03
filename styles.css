@@ -43,18 +43,6 @@ body {
     transition: opacity 0.5s ease;
 }
 
-/* .phone .content {
-    opacity: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
-    height: calc(100% - 60px);
-    width: 100%;
-    transition: opacity 0.5s ease;
-} */
-
 .phone .content.show {
     opacity: 1;
 }
